@@ -1,12 +1,12 @@
-HZZ Analyzer for CMS Run2
+HZZ Analyzer for CMS Run2 (Ultra Legacy)
 
 ------
 
 To install:
 
-cmsrel CMSSW_10_2_18
+cmsrel CMSSW_10_6_19
 
-cd CMSSW_10_2_18/src
+cd CMSSW_10_6_19/src
 
 cmsenv
 
@@ -14,13 +14,9 @@ git cms-init
 
 git clone -b 102_18 https://github.com/VBF-HZZ/UFHZZAnalysisRun2.git
 
-cp UFHZZAnalysisRun2/install*.sh .
+cp UFHZZAnalysisRun2/setup.sh .
 
-you can choose to run install.sh or run install_2.sh
-
-./install_2.sh
-------or------
-./install.sh
+./setup.sh
 
 cmsRun UFHZZAnalysisRun2/UFHZZ4LAna/python/Sync_102X_2018_Legacy_cfg.py
 cmsRun UFHZZAnalysisRun2/UFHZZ4LAna/python/Sync_102X_2017_Legacy_cfg.py
